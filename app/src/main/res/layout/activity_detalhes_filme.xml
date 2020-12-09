@@ -22,4 +22,5 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Tíulo do Filme" />
 
+
 </android.support.constraint.ConstraintLayout>

@@ -4,8 +4,8 @@
         <import type="java.util.Arrays" />
 
         <variable
-            name="book"
-            type="nglauber.android.databinding.model.Book" />
+            name="Filme"
+            type="br.com.grupo5.desesperoFlix.databinding.model.Filme" />
     </data>
 
     <ScrollView
@@ -18,55 +18,55 @@
             android:gravity="center_horizontal"
             android:orientation="vertical"
             android:padding="16dp"
-            tools:context=".BookDetailFragment">
+            tools:context=".FilmeDetailFragment">
 
             <ImageView
                 android:id="@+id/img_capa"
                 android:layout_width="120dp"
                 android:layout_height="160dp"
-                android:src="@{book.imageLinks.thumbnail}" />
+                android:src="@{Filme.imageLinks.thumbnail}" />
 
             <TextView
                 android:id="@+id/text_titulo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@{book.title}" />
+                android:text="@{Filme.title}" />
 
             <TextView
                 android:id="@+id/text_subtitulo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@{book.subtitle}" />
+                android:text="@{Filme.subtitle}" />
 
             <TextView
                 android:id="@+id/text_publisher"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@{book.publisher}" />
+                android:text="@{Filme.publisher}" />
 
             <TextView
                 android:id="@+id/text_autor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@{@string/format_authors(Arrays.toString(book.authors))}" />
+                android:text="@{@string/format_authors(Arrays.toString(Filme.authors))}" />
 
             <TextView
                 android:id="@+id/text_ano"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@{@string/format_publish_date(book.publishedDate)}" />
+                android:text="@{@string/format_publish_date(Filme.publishedDate)}" />
 
             <TextView
                 android:id="@+id/text_pages"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@{@string/format_pages(book.pageCount)}" />
+                android:text="@{@string/format_pages(Filme.pageCount)}" />
 
             <TextView
                 android:id="@+id/text_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@{book.description}" />
+                android:text="@{Filme.description}" />
         </LinearLayout>
     </ScrollView>
 </layout>

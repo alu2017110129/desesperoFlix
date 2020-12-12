@@ -1,3 +1,4 @@
+/*
 package br.com.grupo5.desesperoFlix.data.network.response;
 
 import com.squareup.moshi.Json;
@@ -17,3 +18,4 @@ public class FilmesResult {
         return resultadoFilmes;
     }
 }
+*/

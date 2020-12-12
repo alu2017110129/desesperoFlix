@@ -1,9 +1,10 @@
+/*
 package br.com.grupo5.desesperoFlix.data.mapper;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.grupo5.desesperoFlix.data.model.Filme;
+import br.com.grupo5.desesperoFlix.databinding.model.Filme;
 import br.com.grupo5.desesperoFlix.data.network.response.FilmeResponse;
 
 public class FilmeMapper {
@@ -19,3 +20,4 @@ public class FilmeMapper {
         return listaFilmes;
     }
 }
+*/

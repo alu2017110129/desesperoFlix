@@ -4,7 +4,7 @@
     <data>
         <variable
             name="handler"
-            type="nglauber.android.databinding.BookActivity"/>
+            type="br.com.grupo5.desesperoFlix.databinding.FilmeActivity"/>
     </data>
 
     <LinearLayout
@@ -33,7 +33,7 @@
 
         <fragment
             android:id="@+id/fragment_list"
-            android:name="nglauber.android.databinding.BookListFragment"
+            android:name="br.com.grupo5.desesperoFlix.databinding.FilmeListFragment"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1" />

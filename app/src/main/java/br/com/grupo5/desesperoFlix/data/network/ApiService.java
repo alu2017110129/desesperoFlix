@@ -1,3 +1,4 @@
+/*
 package br.com.grupo5.desesperoFlix.data.network;
 
 import retrofit2.Retrofit;
@@ -20,3 +21,4 @@ public class ApiService {
         return INSTANCE;
     }
 }
+*/

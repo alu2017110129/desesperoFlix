@@ -3,8 +3,8 @@
     <data>
         <import type="java.util.Arrays"/>
         <variable
-            name="book"
-            type="nglauber.android.databinding.model.Book" />
+            name="filme"
+            type="br.com.grupo5.desesperoFlix.databinding.model.Filme" />
     </data>
 
     <RelativeLayout

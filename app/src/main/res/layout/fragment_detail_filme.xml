@@ -21,52 +21,47 @@
             tools:context=".FilmeDetailFragment">
 
             <ImageView
-                android:id="@+id/img_capa"
+                android:id="@+id/poster_path"
                 android:layout_width="120dp"
                 android:layout_height="160dp"
-                android:src="@{Filme.imageLinks.thumbnail}" />
+                android:contentDescription="Poster do Filme"
+                android:src="@{Filme.poster_path.thumbnail}" />
 
             <TextView
-                android:id="@+id/text_titulo"
+                android:id="@+id/original_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@{Filme.title}" />
+                android:text="@{Filme.original_title}" />
 
             <TextView
-                android:id="@+id/text_subtitulo"
+                android:id="@+id/overview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@{Filme.subtitle}" />
+                android:text="@{Filme.overview}" />
 
             <TextView
-                android:id="@+id/text_publisher"
+                android:id="@+id/productions_companies.name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@{Filme.publisher}" />
+                android:text="@{Filme.production_companies_id}" />
 
             <TextView
-                android:id="@+id/text_autor"
+                android:id="@+id/homepage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@{@string/format_authors(Arrays.toString(Filme.authors))}" />
+                android:text="@{Filme.homePage}" />
 
             <TextView
-                android:id="@+id/text_ano"
+                android:id="@+id/original_language"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@{@string/format_publish_date(Filme.publishedDate)}" />
+                android:text="@{Filme.original_language}" />
 
             <TextView
-                android:id="@+id/text_pages"
+                android:id="@+id/genres_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@{@string/format_pages(Filme.pageCount)}" />
-
-            <TextView
-                android:id="@+id/text_description"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@{Filme.description}" />
+                android:text="@{Filme.genresName}" />
         </LinearLayout>
     </ScrollView>
 </layout>

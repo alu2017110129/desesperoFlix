@@ -5,79 +5,77 @@ import org.parceler.Parcel;
 @Parcel
 public class Filme
 {
-    private String title;
-    private String subtitle;
-    private String publisher;
-    private String description;
-    private String[] authors;
-    private String publishedDate;
-    private int pageCount;
-    private Thumbnail imageLinks;
+    private String genresName;
+    private String homePage;
+    private int ID;
+    private String imdb_id;
+    private String original_language;
+    private String original_title;
+    private String overview;
+    private String popularity;
+    private Thumbnail poster_path;
+    private String production_companies_id;
 
     public Filme() {
     }
-
-    public String getTitle() {
-        return title;
+    public String getGenresName() {
+        return genresName;
     }
-
-    public void setTitle(String title) {
-        this.title = title;
+    public void setGenresName(String genresName) {
+        this.genresName = genresName;
     }
-
-    public String getSubtitle() {
-        return subtitle;
+    public void setHomePage(String homePage) {
+        this.homePage = homePage;
     }
-
-    public void setSubtitle(String subtitle) {
-        this.subtitle = subtitle;
+    public String getHomePage() {
+        return homePage;
     }
-
-    public String getPublisher() {
-        return publisher;
+    public int getID() {
+        return ID;
     }
-
-    public void setPublisher(String publisher) {
-        this.publisher = publisher;
+    public void setID(int ID) {
+        this.ID = ID;
     }
-
-    public String getDescription() {
-        return description;
+    public String getImdb_id() {
+        return imdb_id;
     }
-
-    public void setDescription(String description) {
-        this.description = description;
+    public void setImdb_id(String imdb_id) {
+        this.imdb_id = imdb_id;
     }
-
-    public String[] getAuthors() {
-        return authors;
+    public String getOriginal_language() {
+        return original_language;
     }
-
-    public void setAuthors(String[] authors) {
-        this.authors = authors;
+    public void setOriginal_language(String original_language) {
+        this.original_language = original_language;
     }
-
-    public String getPublishedDate() {
-        return publishedDate;
+    public String getOriginal_title() {
+        return original_title;
     }
-
-    public void setPublishedDate(String publishDate) {
-        this.publishedDate = publishDate;
+    public void setOriginal_title(String original_title) {
+        this.original_title = original_title;
     }
-
-    public int getPageCount() {
-        return pageCount;
+    public String getOverview() {
+        return overview;
     }
-
-    public void setPageCount(int pageCount) {
-        this.pageCount = pageCount;
+    public void setOverview(String overview) {
+        this.overview = overview;
     }
-
-    public Thumbnail getImageLinks() {
-        return imageLinks;
+    public String getPopularity() {
+        return popularity;
     }
-
-    public void setImageLinks(Thumbnail imageLinks) {
-        this.imageLinks = imageLinks;
+    public void setPopularity(String popularity) {
+        this.popularity = popularity;
+    }
+    public Thumbnail getPoster_path() {
+        return poster_path;
+    }
+    public void setPoster_path(Thumbnail poster_path) {
+        this.poster_path = poster_path;
+    }
+    public String getProduction_companies_id() {
+        return production_companies_id;
+    }
+    public void setProduction_companies_id(String production_companies_id) {
+        this.production_companies_id = production_companies_id;
     }
 }

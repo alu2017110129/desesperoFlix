@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
@@ -41,7 +41,7 @@ public class FilmeListFragment extends Fragment {
                 inflater, R.layout.fragment_list_filme, container, false);
 
         mAdapter = new FilmeAdapter(mFilmes, mListener);
-        mBinding.listFilme.setAdapter(mAdapter);
+//        mBinding.srcOver.setAdapter(mAdapter);
         return mBinding.getRoot();
     }
 
@@ -77,6 +77,6 @@ public class FilmeListFragment extends Fragment {
     }
 
     public void showError() {
- //       Toast.makeText(getActivity(), R.string.msg_error_search_filmes, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getActivity(), R.string.status_bar_notification_info_overflow, Toast.LENGTH_SHORT).show();
     }
 }

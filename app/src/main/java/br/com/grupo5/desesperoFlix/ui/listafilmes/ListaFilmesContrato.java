@@ -1,8 +1,8 @@
-package br.com.douglasmotta.filmespopulares.ui.listafilmes;
+package br.com.grupo5.desesperoFlix.ui.listafilmes;
 
 import java.util.List;
 
-import br.com.douglasmotta.filmespopulares.data.model.Filme;
+import br.com.grupo5.desesperoFlix.databinding.model.Filme;
 
 public interface ListaFilmesContrato {
 

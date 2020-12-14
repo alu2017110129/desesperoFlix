@@ -1,11 +1,12 @@
-package br.com.douglasmotta.filmespopulares.ui.detalhesfilme;
+package br.com.grupo5.desesperoFlix.ui.detalhesfilme;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-import br.com.douglasmotta.filmespopulares.R;
-import br.com.douglasmotta.filmespopulares.data.model.Filme;
+import androidx.appcompat.app.AppCompatActivity;
+
+import br.com.grupo5.desesperoFlix.R;
+import br.com.grupo5.desesperoFlix.databinding.model.Filme;
 
 public class DetalhesFilmeActivity extends AppCompatActivity {
 
@@ -14,12 +15,12 @@ public class DetalhesFilmeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detalhes_filme);
+        setContentView(R.layout.activity_detail_filme);
 
-        TextView textTituloFilme = findViewById(R.id.text_titulo_filme);
+        TextView textTituloFilme = findViewById(R.id.original_title);
 
         final Filme filme = (Filme) getIntent().getSerializableExtra(EXTRA_FILME);
 
-        textTituloFilme.setText(filme.getTitulo());
+        textTituloFilme.setText(filme.getOriginal_title());
     }
 }

@@ -1,19 +1,21 @@
-package br.com.douglasmotta.filmespopulares.ui.listafilmes;
+package br.com.grupo5.desesperoFlix.ui.listafilmes;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
+import android.os.Parcelable;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-import br.com.douglasmotta.filmespopulares.R;
-import br.com.douglasmotta.filmespopulares.data.model.Filme;
-import br.com.douglasmotta.filmespopulares.ui.detalhesfilme.DetalhesFilmeActivity;
+import br.com.grupo5.desesperoFlix.R;
+import br.com.grupo5.desesperoFlix.databinding.model.Filme;
+import br.com.grupo5.desesperoFlix.ui.detalhesfilme.DetalhesFilmeActivity;
 
 public class ListaFilmesActivity extends AppCompatActivity
         implements ListaFilmesContrato.ListaFilmesView,
@@ -25,7 +27,7 @@ public class ListaFilmesActivity extends AppCompatActivity
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.acitivity_lista_filmes);
+        setContentView(R.layout.fragment_list_filme);
 
         configuraToolbar();
 
@@ -36,12 +38,12 @@ public class ListaFilmesActivity extends AppCompatActivity
     }
 
     private void configuraToolbar() {
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.fragment_list);
         setSupportActionBar(toolbar);
     }
 
     private void configuraAdapter() {
-        final RecyclerView recyclerFilmes = findViewById(R.id.recycler_filmes);
+        final RecyclerView recyclerFilmes = findViewById(R.id.dataBinding);
 
         filmesAdapter = new ListaFilmesAdapter(this);
 
@@ -70,7 +72,7 @@ public class ListaFilmesActivity extends AppCompatActivity
     @Override
     public void onItemFilmeClicado(Filme filme) {
         Intent intent = new Intent(this, DetalhesFilmeActivity.class);
-        intent.putExtra(DetalhesFilmeActivity.EXTRA_FILME, filme);
+        intent.putExtra(DetalhesFilmeActivity.EXTRA_FILME, (Parcelable) filme);
         startActivity(intent);
     }
 }

@@ -1,11 +1,11 @@
-package br.com.douglasmotta.filmespopulares.ui.listafilmes;
+package br.com.grupo5.desesperoFlix.ui.listafilmes;
 
 import java.util.List;
 
-import br.com.douglasmotta.filmespopulares.data.mapper.FilmeMapper;
-import br.com.douglasmotta.filmespopulares.data.model.Filme;
-import br.com.douglasmotta.filmespopulares.data.network.ApiService;
-import br.com.douglasmotta.filmespopulares.data.network.response.FilmesResult;
+import br.com.grupo5.desesperoFlix.data.mapper.FilmeMapper;
+import br.com.grupo5.desesperoFlix.databinding.model.Filme;
+import br.com.grupo5.desesperoFlix.data.network.ApiService;
+import br.com.grupo5.desesperoFlix.data.network.response.FilmesResult;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

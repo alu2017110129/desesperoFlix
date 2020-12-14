@@ -3,8 +3,7 @@ package br.com.grupo5.desesperoFlix.databinding.model;
 import org.parceler.Parcel;
 
 @Parcel
-public class Filme
-{
+public class Filme implements androidx.databinding.DataBindingComponent {
     private String genresName;
     private String homePage;
     private int ID;
@@ -16,7 +15,9 @@ public class Filme
     private Thumbnail poster_path;
     private String production_companies_id;
 
-    public Filme() {
+    public Filme(String tituloOriginal, Thumbnail caminhoPoster) {
+        this.original_title = tituloOriginal;
+        this.poster_path = caminhoPoster;
     }
     public String getGenresName() {
         return genresName;

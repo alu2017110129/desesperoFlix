@@ -1,6 +1,8 @@
-/*
+
 package br.com.grupo5.desesperoFlix.data.model;
 
+
+import java.io.Serializable;
 
 public class Filme implements Serializable {
 
@@ -18,7 +20,5 @@ public class Filme implements Serializable {
 
     public String getCaminhoPoster() {
         return caminhoPoster;
-        }
     }
-
- */
+}

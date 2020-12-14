@@ -1,20 +1,21 @@
-package br.com.douglasmotta.filmespopulares.ui.listafilmes;
+package br.com.grupo5.desesperoFlix.ui.listafilmes;
 
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.douglasmotta.filmespopulares.R;
-import br.com.douglasmotta.filmespopulares.data.model.Filme;
+import br.com.grupo5.desesperoFlix.R;
+import br.com.grupo5.desesperoFlix.databinding.model.Filme;
 
 public class ListaFilmesAdapter extends RecyclerView.Adapter<ListaFilmesAdapter.ListaFilmesViewHolder> {
 
@@ -54,8 +55,8 @@ public class ListaFilmesAdapter extends RecyclerView.Adapter<ListaFilmesAdapter.
         public ListaFilmesViewHolder(View itemView) {
             super(itemView);
 
-            textTituloFilme = itemView.findViewById(R.id.text_titulo_filme);
-            imagePosterFilme = itemView.findViewById(R.id.image_poster_filme);
+            textTituloFilme = itemView.findViewById(R.id.original_title);
+            imagePosterFilme = itemView.findViewById(R.id.poster_path);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -70,9 +71,9 @@ public class ListaFilmesAdapter extends RecyclerView.Adapter<ListaFilmesAdapter.
         public void bind(Filme filme) {
             this.filme = filme;
 
-            textTituloFilme.setText(filme.getTitulo());
+            textTituloFilme.setText(filme.getOriginal_title());
             Picasso.get()
-                    .load("https://image.tmdb.org/t/p/w342/" + filme.getCaminhoPoster())
+                    .load("https://image.tmdb.org/t/p/w342/" + filme.getPoster_path())
                     .into(imagePosterFilme);
         }
     }

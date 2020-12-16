@@ -38,7 +38,7 @@ public class ListaFilmesActivity extends AppCompatActivity
     }
 
     private void configuraToolbar() {
-        Toolbar toolbar = findViewById(R.id.fragment_list);
+        Toolbar toolbar = findViewById(R.id.poster_path);
         setSupportActionBar(toolbar);
     }
 

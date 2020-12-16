@@ -27,11 +27,11 @@ public class FilmeActivity extends AppCompatActivity
         mBinding.setHandler(this);
 
         mListFragment = (FilmeListFragment)
-                getSupportFragmentManager().findFragmentById(R.id.fragment_list);
+                getSupportFragmentManager().findFragmentById(R.id.poster_path);
     }
 
     public void onSearchClick(View view){
-        mListFragment.search(mBinding.editSearch.getText().toString());
+        mListFragment.search(mBinding.searchEditFrame.getText().toString());
     }
 
     @Override

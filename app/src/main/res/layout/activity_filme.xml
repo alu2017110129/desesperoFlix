@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="396dp"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context=".databinding.FilmeActivity">
 
@@ -20,7 +20,7 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/edit_search"
+                android:id="@+id/search_edit_frame"
                 style="@style/Widget.AppCompat.AutoCompleteTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
             android:background="?attr/colorPrimary"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
             app:elevation="6dp"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
 
         <androidx.cardview.widget.CardView
@@ -63,28 +63,21 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:id="@+id/image_poster_filme"
+                    android:id="@+id/poster_path"
                     android:layout_width="match_parent"
                     android:layout_height="220dp"
                     android:scaleType="fitXY" />
 
                 <TextView
-                    android:id="@+id/text_titulo_filme"
+                    android:id="@+id/original_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/image_poster_filme"
+                    android:layout_below="@id/poster_path"
                     android:layout_centerHorizontal="true"
                     android:padding="16dp"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
                     tools:text="Título do filme" />
-
-                <fragment
-                    android:id="@+id/fragment_list"
-                    android:name="br.com.grupo5.desesperoFlix.databinding.FilmeListFragment"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
 
             </RelativeLayout>
 
